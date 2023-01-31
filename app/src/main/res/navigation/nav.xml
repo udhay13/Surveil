@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.crayosa.surveil.fragments.HomeFragment"
+        android:label="Surveil">
+        <action
+            android:id="@+id/action_homeFragment_to_createClassRoom"
+            app:destination="@id/createClassRoom"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_homeFragment_to_joinClassFragment"
+            app:destination="@id/joinClassFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/homeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_classRoomFragment"
+            app:destination="@id/classRoomFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/createClassRoom"
+        android:name="com.crayosa.surveil.fragments.CreateClassRoom"
+        android:label="Create room"
+        tools:layout="@layout/fragment_create_class_room" >
+        <action
+            android:id="@+id/action_createClassRoom_to_classRoomFragment"
+            app:destination="@id/classRoomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/joinClassFragment"
+        android:name="com.crayosa.surveil.fragments.JoinClassFragment"
+        android:label="Join room" >
+        <action
+            android:id="@+id/action_joinClassFragment_to_classRoomFragment"
+            app:destination="@id/classRoomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/classRoomFragment"
+        android:name="com.crayosa.surveil.fragments.ClassRoomFragment">
+        <argument
+            android:name="classroom"
+            app:argType="com.crayosa.surveil.datamodels.ClassRoom" />
+        <action
+            android:id="@+id/action_classRoomFragment_to_classRoomInfoFragment"
+            app:destination="@id/classRoomInfoFragment" />
+        <action
+            android:id="@+id/action_classRoomFragment_to_playerFragment"
+            app:destination="@id/playerFragment" />
+        <action
+            android:id="@+id/action_classRoomFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/classRoomInfoFragment"
+        android:name="com.crayosa.surveil.fragments.ClassRoomInfoFragment">
+        <argument
+            android:name="classroom"
+            app:argType="com.crayosa.surveil.datamodels.ClassRoom" />
+    </fragment>
+    <fragment
+        android:id="@+id/playerFragment"
+        android:name="com.crayosa.surveil.fragments.PlayerFragment"
+        android:label="PlayerFragment" >
+        <argument
+            android:name="lecture"
+            app:argType="com.crayosa.surveil.datamodels.Lecture" />
+        <argument
+            android:name="classroom"
+            app:argType="com.crayosa.surveil.datamodels.ClassRoom" />
+        <argument
+            android:name="progress"
+            app:argType="com.crayosa.surveil.datamodels.Progress"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.crayosa.surveil.fragments.ReportFragment"
+        tools:layout="@layout/fragment_report">
+        <argument
+            android:name="cID"
+            app:argType="string" />
+        <argument
+            android:name="lID"
+            app:argType="string" />
+    </fragment>
+</navigation>

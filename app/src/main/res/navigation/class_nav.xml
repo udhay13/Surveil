@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/class_nav"
+    app:startDestination="@id/lecturesFragment">
+
+    <fragment
+        android:id="@+id/lecturesFragment"
+        android:name="com.crayosa.surveil.fragments.LecturesFragment"
+        android:label="LecturesFragment" >
+        <action
+            android:id="@+id/action_lecturesFragment_to_membersFragment"
+            app:destination="@id/membersFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/lecturesFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="classroom"
+            app:argType="com.crayosa.surveil.datamodels.ClassRoom" />
+        <action
+            android:id="@+id/action_lecturesFragment_to_addLectureFragment"
+            app:destination="@id/addLectureFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/membersFragment"
+        android:name="com.crayosa.surveil.fragments.MembersFragment"
+        android:label="MembersFragment" >
+        <action
+            android:id="@+id/action_membersFragment_to_lecturesFragment"
+            app:destination="@id/lecturesFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/lecturesFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="classroom"
+            app:argType="com.crayosa.surveil.datamodels.ClassRoom" />
+    </fragment>
+    <fragment
+        android:id="@+id/addLectureFragment"
+        android:name="com.crayosa.surveil.fragments.AddLectureFragment"
+        android:label="AddLectureFragment" >
+        <argument
+            android:name="classroom"
+            app:argType="com.crayosa.surveil.datamodels.ClassRoom" />
+    </fragment>
+</navigation>

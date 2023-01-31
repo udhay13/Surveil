@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/layout_class"
+            android:id="@+id/class_preview"/>
+
+        <EditText
+            android:layout_margin="20dp"
+            android:id="@+id/room_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Room Name" />
+
+        <EditText
+            android:layout_margin="20dp"
+            android:id="@+id/room_section_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Subject Name" />
+
+
+        <EditText
+            android:layout_margin="20dp"
+            android:id="@+id/room_faculty_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Faculty Name" />
+
+            <RadioGroup
+                android:id="@+id/color_group"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:text="Color 1"
+                    android:id="@+id/rc1"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:text="Color 2"
+                    android:id="@+id/rc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:text="Color 3"
+                    android:id="@+id/rc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RadioGroup>
+            <RadioGroup
+                android:id="@+id/gender_group"
+                android:layout_margin="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:checked="true"
+                    android:id="@+id/radio_male_hero"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:id="@+id/radio_female_hero"/>
+
+            </RadioGroup>
+        <Button
+            android:id="@+id/submit_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:text="Create"/>
+    </LinearLayout>
+</layout>

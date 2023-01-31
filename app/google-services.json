@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "472813314444",
+    "project_id": "surveil-mini-project",
+    "storage_bucket": "surveil-mini-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472813314444:android:ad4676605869e43250b6a9",
+        "android_client_info": {
+          "package_name": "com.crayosa.surveil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472813314444-n78dtqjvghvafjj7m84kisiagbg8msa5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.crayosa.surveil",
+            "certificate_hash": "730227b8c030511f4f15f578ea0025007bea568c"
+          }
+        },
+        {
+          "client_id": "472813314444-mk3jl9qttke4eqv2ta7tcfg0utnasri5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEfLbzKqmjSFycmzFtyS16jAStHHs9CEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472813314444-mk3jl9qttke4eqv2ta7tcfg0utnasri5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

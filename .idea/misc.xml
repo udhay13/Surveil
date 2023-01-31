@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/home_page_background.xml" value="0.37447916666666664" />
+        <entry key="app/src/main/res/drawable/ic_astronaut_man.xml" value="0.21614583333333334" />
+        <entry key="app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.37447916666666664" />
+        <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.37447916666666664" />
+        <entry key="app/src/main/res/drawable/ic_baseline_play_arrow_24.xml" value="0.1615" />
+        <entry key="app/src/main/res/drawable/ic_google.xml" value="0.21614583333333334" />
+        <entry key="app/src/main/res/drawable/rounded_button.xml" value="0.37447916666666664" />
+        <entry key="app/src/main/res/drawable/rounded_rect.xml" value="0.25" />
+        <entry key="app/src/main/res/drawable/rounded_rect_white.xml" value="0.21614583333333334" />
+        <entry key="app/src/main/res/font/monda_font.xml" value="0.252027027027027" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.27312775330396477" />
+        <entry key="app/src/main/res/layout/fragment_add_lecture.xml" value="0.21421370967741934" />
+        <entry key="app/src/main/res/layout/fragment_class_room.xml" value="0.23243243243243245" />
+        <entry key="app/src/main/res/layout/fragment_class_room_info.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_create_class_room.xml" value="0.25894736842105265" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_join_class.xml" value="0.18541666666666667" />
+        <entry key="app/src/main/res/layout/fragment_join_class_room.xml" value="0.35833333333333334" />
+        <entry key="app/src/main/res/layout/fragment_lectures.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_members.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_player.xml" value="0.23243243243243245" />
+        <entry key="app/src/main/res/layout/fragment_plyer.xml" value="0.12331081081081081" />
+        <entry key="app/src/main/res/layout/fragment_report.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_roommates.xml" value="0.35833333333333334" />
+        <entry key="app/src/main/res/layout/layout_class.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/layout_dialog_progress.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/layout_item_header.xml" value="0.23243243243243245" />
+        <entry key="app/src/main/res/layout/layout_lecture.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/layout_members.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/layout_player_control.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/layout_progress_item.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/layout_report_head.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/bottom_nav.xml" value="0.23243243243243245" />
+        <entry key="app/src/main/res/menu/class_info.xml" value="0.23243243243243245" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.21614583333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.33" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
